@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>encriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body> 
+             <!--donde se inserta el codigo a encriptar-->
+            <div class="contenedor">
+                <h1 class="encabezado">Intresa la palabra u oracion :</h1>
+                <div class="encriptar">
+                    
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                <div class="condiciones">
+                    <p>solo letras minusculas y sin acentos</p>
+                </div>
+
+                </div>
+                <div class="botones">
+                    <button class="encritar-boton" type="button" onclick="encriptar();">encriptar</button>
+                    
+                    <button class="desencriptar-boton" type="button" onclick="desencriptar();">desencriptar</button>
+                </div>
+                <div class="mensaje-usuario">
+                    <div class="mensaje-uno" id="mensaje-uno">
+                        <h2 id="titulo-mensaje" >ningun texto ingresado</h2>
+                        <p id="parrafo">intresa texto para encriptar o desencriptar</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <p class="pie">Alejandro Villarroel 2024</p>
+              </footer>
+    </body>
+    <script src="encritador.js"></script>
+</html>
